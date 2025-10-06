@@ -1,6 +1,6 @@
-const ButtonPrimary = (props) => {
+const ButtonPrimary = ({ text, url }) => {
     return  (
-        <button className="primary-button">{props.text}</button>
+        <a href={url} className="primary-button" target="_blank">{text}</a>
     );
 }
 export default ButtonPrimary;

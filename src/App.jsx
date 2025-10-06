@@ -26,7 +26,7 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
-      <ButtonPrimary text="Primer botón"/>
+      <ButtonPrimary url="https://github.com/juankh993/estudiandoReact/commit/dbb50c0724795e1ded58569781d0c4704a06cadb" text="Botón con destructuring"/>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>

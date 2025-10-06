@@ -57,9 +57,13 @@ button:focus-visible {
 .primary-button {
   background-color: #535bf2;
   color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
 }
 .primary-button:hover {
-  background-color: #343437ff;
+  background-color: #1045c1;
+  color: white;
 }
 
 @media (prefers-color-scheme: light) {
