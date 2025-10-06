@@ -26,7 +26,7 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
-      <ButtonPrimary />
+      <ButtonPrimary text="Primer botón"/>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
