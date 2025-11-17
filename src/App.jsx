@@ -2,8 +2,14 @@ import './App.css'
 import ButtonPrimary from './ButtonPrimary.jsx'
 import Counter from './counter.jsx'
 import Registerform from './RegisterForm.jsx'
+import { useState } from 'react'
 
 function App() {
+  const [nameUser, setNameUser] = useState("");
+  
+  const handleNameChange = ( onNameNew) => {
+    setNameUser(onNameNew);
+  }
 
   return (
     <>
@@ -12,7 +18,9 @@ function App() {
 
       <Counter />
 
-      <Registerform nameLabel="First Name: "/>
+    {/* prop onNameChange que llama a la funcion para pasar prop de padre a hijo */}
+    <Registerform nameLabel="First Name: " onNameNew={handleNameChange}/>
+    <h2>{nameUser}</h2>
     </>
   )
 }
